@@ -42,6 +42,7 @@ const ContactForm = () => {
       number: '',
     },
     resolver: yupResolver(validationSchema),
+    mode: 'onBlur',
   });
 
   const onSubmit = data => {
